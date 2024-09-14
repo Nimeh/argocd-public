@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: nginx
   namespace: prod
-  lables:
+  labels:
     app: nginx
 spec:
   replicas: 1
@@ -13,7 +13,7 @@ spec:
       app: nginx
   template:
     metadata:
-      lables:
+      labels:
         app: nginx
     spec:
       containers:
